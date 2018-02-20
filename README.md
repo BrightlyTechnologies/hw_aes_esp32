@@ -51,9 +51,15 @@ On your sender, the code is similar and looks like this:
 
 That's it. You're now communicating (somewhat) securely.
 
-#Functions:
+# Functions:
 
 - void esp_aes_hw_hexDump(unsigned char *, uint16_t);
 - uint8_t esp_aes_hw_multiple_blocks(int, unsigned char *, unsigned char *, unsigned char *, uint16_t);
 - int esp_aes_hw_crypt_cbc(int, size_t, unsigned char[16], const unsigned char *, const unsigned char *, unsigned char *);
 - int esp_aes_hw_crypt_cfb8(int, size_t, unsigned char[16], const unsigned char *, const unsigned char *, unsigned char 
+
+# Installation:
+
+- M5_LoRa_Receiver.ino goes into the main Arduino folder, inside its own M5_LoRa_Receiver folder.
+- HW_AES.cpp and HW_AES.h go into the Arduino/libraries folder, inside their own HW_AES folder.
+- You'll need to write your own LoRa sender code [see above].
