@@ -63,3 +63,4 @@ That's it. You're now communicating (somewhat) securely.
 - M5_LoRa_Receiver.ino goes into the main Arduino folder, inside its own M5_LoRa_Receiver folder.
 - HW_AES.cpp and HW_AES.h go into the Arduino/libraries folder, inside their own HW_AES folder.
 - You'll need to write your own LoRa sender code [see above].
+- Diffie-Hellman_Key_Exchange.ino goes into the main Arduino folder, inside its own M5_LoRa_Receiver folder. It's a proof of concept for key exchange.
